@@ -116,4 +116,20 @@ class ScholarshipCalculatorTest {
     void scholarshipLowGpaZero() {
         assertEquals(0, calc.scholarship(2.5, 10, false));
     }
+
+    // ---- Хэсэг C: gpa() давталтын заагууд (0 / 1 / 2+ удаа) ----
+    @Test
+    void gpaLoopZeroIterationsThrows() {
+        assertThrows(IllegalArgumentException.class, () -> calc.gpa(new double[]{}));
+    }
+
+    @Test
+    void gpaLoopOneIteration() {
+        assertEquals(4.0, calc.gpa(new double[]{95}), 0.0001);
+    }
+
+    @Test
+    void gpaLoopManyIterations() {
+        assertEquals(3.0, calc.gpa(new double[]{85, 85, 85}), 0.0001);
+    }
 }
