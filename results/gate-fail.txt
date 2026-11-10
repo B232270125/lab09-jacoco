@@ -1,0 +1,60 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mmn.edu.must.sqat:lab09-jacoco[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding lab09-jacoco 1.0[m
+[[1;34mINFO[m]   from pom.xml
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:prepare-agent[m [1m(default)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/hitechpict/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/home/hitechpict/lab09-jacoco/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/hitechpict/lab09-jacoco/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:compile[m [1m(default-compile)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/hitechpict/lab09-jacoco/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32msurefire:3.2.5:test[m [1m(default-test)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running mn.edu.must.sqat.[1mScholarshipCalculatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m31[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s -- in mn.edu.must.sqat.[1mScholarshipCalculatorTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 31, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjar:3.1.2:jar[m [1m(default-jar)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/hitechpict/lab09-jacoco/target/lab09-jacoco-1.0.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:report[m [1m(report)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /home/hitechpict/lab09-jacoco/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'lab09-jacoco' with 1 classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:check[m [1m(coverage-check)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /home/hitechpict/lab09-jacoco/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'lab09-jacoco' with 1 classes
+[[1;33mWARNING[m] Rule violated for bundle lab09-jacoco: given minimum ratio is 1.10, but must be between 0.0 and 1.0
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.057 s
+[[1;34mINFO[m] Finished at: 2026-11-10T23:08:48+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.jacoco:jacoco-maven-plugin:0.8.12:check[m [1m(coverage-check)[m on project [36mlab09-jacoco[m: [1;31mCoverage checks have not been met. See log for details.[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
