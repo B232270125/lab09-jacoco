@@ -23,3 +23,11 @@ OS name: "linux", version: "6.18.54.1-microsoft-standard-wsl2", arch: "amd64", f
 Шар ромбо бүхий мөрүүд нь `if`, `||`, `&&` нөхцөлийн зөвхөн нэг салаа хамрагдсаныг заана. Жишээ нь `letterGrade`-ийн `score >= 70`, `scholarship`-ийн `hasViolation`, `gpa >= 3.0` нөхцөлүүд зөвхөн үнэн эсвэл зөвхөн худал чиглэлд ажилласан.
 
 Улаан (огт хүрээгүй) 8 мөр нь гурван `throw` бүхий алдааны зам, `letterGrade`-ийн D/F салаа, `gpa`-ийн `switch` доторх C/D тохиолдол, `scholarship`-ийн `return 0` юм. Happy-path тестүүд эдгээрийг дайрдаггүй.
+
+## Хэсэг B: CFG ба Branch/Line 100%
+
+![CFG](cfg.png)
+
+`scholarship()` функцийн CFG-г draw.io дээр зурж, ирмэг бүрийг тест рүү буулгасан. Branch ба Line хамралтыг 100% болгохын тулд нийт 21 тест шаардагдсан (`results/mvn-verify-B.txt` дахь `Tests run: 21`). `results/jacoco-B.csv`-д BRANCH_MISSED = 0, LINE_MISSED = 0.
+
+AI ашигласан хэсэг: CFG-ийн эхний загвар болон ирмэг-тестийн буулгалтыг Claude-ийн тусламжтайгаар бэлтгэсэн бөгөөд ирмэг бүрийг тесттэй өөрөө тулгаж шалгасан.
