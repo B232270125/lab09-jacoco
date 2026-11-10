@@ -132,4 +132,40 @@ class ScholarshipCalculatorTest {
     void gpaLoopManyIterations() {
         assertEquals(3.0, calc.gpa(new double[]{85, 85, 85}), 0.0001);
     }
+
+    // ---- Хэсэг D: letterGrade зааг утгууд (спецификаци: 60-69.99 = D) ----
+    @Test
+    void letterGradeBoundary60IsD() {
+        assertEquals("D", calc.letterGrade(60));
+    }
+
+    @Test
+    void letterGradeBoundary5999IsF() {
+        assertEquals("F", calc.letterGrade(59.99));
+    }
+
+    @Test
+    void letterGradeBoundary6999IsD() {
+        assertEquals("D", calc.letterGrade(69.99));
+    }
+
+    @Test
+    void letterGradeBoundary0IsF() {
+        assertEquals("F", calc.letterGrade(0));
+    }
+
+    @Test
+    void letterGradeBoundary100IsA() {
+        assertEquals("A", calc.letterGrade(100));
+    }
+
+    @Test
+    void letterGradeBoundary8999IsB() {
+        assertEquals("B", calc.letterGrade(89.99));
+    }
+
+    @Test
+    void letterGradeBoundary90IsA() {
+        assertEquals("A", calc.letterGrade(90));
+    }
 }
